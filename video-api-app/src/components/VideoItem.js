@@ -6,6 +6,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
     <div onClick={() => onVideoSelect(video)} className="video-item item">
       <span>VideoItem Component</span>
       <img
+        alt={video.snippet.title}
         className="ui image"
         src={video.snippet.thumbnails.medium.url}
         alt=""
